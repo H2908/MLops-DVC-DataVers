@@ -7,8 +7,8 @@ new_row_loc = {'Name': 'David', 'Age': 40, 'City': 'Houston'}
 
 df = pd.concat([df, pd.DataFrame([new_row_loc])], ignore_index=True)
 ## Adding new row to df for v3
-#new_row_loc2={'Name':'Dev','Age':40,'City':'guston'}
-#df.loc[len(df.index)]=new_row_loc2
+new_row_loc2={'Name':'Dev','Age':40,'City':'guston'}
+df=pd.concat([df,pd.DataFrame([new_row_loc2])],ignore_index=True)
 
 # Ensure the 'data' directory exists at the root level
 data_dir = 'data'
