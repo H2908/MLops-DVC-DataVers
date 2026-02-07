@@ -3,11 +3,11 @@ import os
 data={'Name':['Alice','Bob','Charlie'],'Age':[25,30,35],'City':['New York','Los Angeles','Chicago']}
 df=pd.DataFrame(data)
 ## Adding new row to df for v2
-#new_row_loc={'Name':'David','Age':40,'City':'Houston'}
-#df.iloc[len(df.index)]=new_row_loc
+new_row_loc = {'Name': 'David', 'Age': 40, 'City': 'Houston'}
 
+df = pd.concat([df, pd.DataFrame([new_row_loc])], ignore_index=True)
 ## Adding new row to df for v3
-#new_row_loc2={'Name':'David','Age':40,'City':'Houston'}
+#new_row_loc2={'Name':'Dev','Age':40,'City':'guston'}
 #df.loc[len(df.index)]=new_row_loc2
 
 # Ensure the 'data' directory exists at the root level
